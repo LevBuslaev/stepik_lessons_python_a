@@ -1,4 +1,20 @@
+n = int(input())
+b = n
+sum = 0
+count = 0
+mult = 1
 
+while n != 0:
+    sum += n % 10
+    count += 1
+    mult *= n % 10
+    n //= 10
+print(sum)
+print(count)
+print(mult)
+print(sum / count)
+print(b //(10 ** (count - 1)))
+print((b // (10 ** (count - 1))) + (b % 10))
 
 
 
