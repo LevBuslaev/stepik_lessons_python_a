@@ -1,12 +1,11 @@
-n = int(input())
-count = 1
-while n != 0:
-    n_pred = n % 10
-    n_posl = n // 10
-    if n_pred == n_posl:
-        count += 1
-    else:
-        print('NO')
+n = int(input()) # работает
+n = str(n)
+n_max = max(n)
+n_min = min(n)
+if n_max == n_min:
+    print('YES')
+else:
+    print('NO')
 
 # ================================================
 '''7.5 Цикл while: обработка цифр числа
