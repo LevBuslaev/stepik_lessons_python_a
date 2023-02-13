@@ -1,7 +1,7 @@
 n = int(input())
 num = 1
-for n in range(1, n + 1):        # ЭТО ЦИКЛ ВНУТРИ СТРОКИ
-    for j in range(1, n + 1):    # ЭТО ЦИКЛ КОЛИЧЕСТВА СТРОК
+for n in range(1, n + 1):        # ЭТО ЦИКЛ КОЛИЧЕСТВА СТРОК
+    for j in range(1, n + 1):    # ЭТО ЦИКЛ ВНУТРИ СТРОКИ
         print(num, end=' ')
         num += 1
     print()
