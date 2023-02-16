@@ -1,22 +1,8 @@
-n = int(input())  # ввод числа
-
-while n > 9:  # до тех пор, пока в числе n не останется одна цифраа
-    s = 0
-    while (n > 0):
-        last_digit = n % 10  # получить последнюю цифру
-        s += last_digit  # к числу прибавляем последнюю цифру
-        n = n // 10  # удалить последнюю цифру из числа
-    n = s
-
-print(n)
-
-
-
-
-'''n = int(input())
-while n > 9:
-    k = n // 10 + n % 10
-    print(k)'''
-
-
-
+n = int(input())
+sum = 0
+for i in range(1, n + 1):
+    f = 1
+    for j in range(1, i + 1):
+        f = f * j
+    sum += f
+print(sum)
